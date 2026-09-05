@@ -1,6 +1,6 @@
 # Shooting Star
 
-자원을 채굴해 무기를 제작하고, 팀원과 협력해 상대 팀을 제압하는 3D 탑다운 전술 슈팅 게임입니다. 절차적으로 생성되는 전장과 좁아지는 안전 영역에서 자원 확보와 교전 시점을 판단하며 전투합니다.
+ 자원을 채굴해 무기를 제작하고, 팀원과 협력해 상대 팀을 제압하는 3D 탑다운 전술 슈팅 게임입니다. 절차적으로 생성되는 전장과 좁아지는 안전 영역에서 자원 확보와 교전 시점을 판단하며 전투합니다.
 
 <div align="center">
 
@@ -13,6 +13,7 @@
 | 추가 기여 | GameMode 중심의 초기 전투 흐름 설계, 안전 영역 초기 구현 |
 
 </div>
+
 
 ## 플레이 영상
 
@@ -33,6 +34,7 @@
 https://github.com/user-attachments/assets/742f9eb4-b533-4154-b291-3433c4f77793
 
 </td><td width="15%"></td></tr></table>
+
 
 ## 핵심 구현
 
@@ -55,6 +57,7 @@ https://github.com/user-attachments/assets/742f9eb4-b533-4154-b291-3433c4f77793
 - [자원 생성 코드](Source/Source/ShootingStar/Private/ResourceGenerator.cpp)
 - [PR: 자원 재배치](https://github.com/floweryclover/shooting-star/pull/158)
 - [PR: 보급 이벤트](https://github.com/floweryclover/shooting-star/pull/129)
+
 
 ## 추가 담당 기능
 
