@@ -2,6 +2,12 @@
 
 자원을 수집하고 전투를 진행하는 Unreal Engine 기반 3D 멀티플레이 슈팅 게임입니다. 저는 절차적 맵 생성과 공간 점유 판정, 라운드별 자원 갱신, 보급품 배치와 카메라 가림 처리를 담당했습니다.
 
+## 데모 영상
+
+[![Shooting Star 데모 영상](https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg)](https://www.youtube.com/watch?v=m5du1KtTWZ0)
+
+[YouTube에서 데모 보기](https://www.youtube.com/watch?v=m5du1KtTWZ0)
+
 | 구분 | 내용 |
 | --- | --- |
 | 기간 | 2025.03 ~ 2025.06 |
