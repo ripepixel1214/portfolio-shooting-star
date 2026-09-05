@@ -1,8 +1,5 @@
 # Shooting Star
 
-[![Shooting Star 데모 영상](https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg)](https://www.youtube.com/watch?v=m5du1KtTWZ0)
-[데모 영상]
-
 자원을 수집하고 전투를 진행하는 Unreal Engine 기반 3D 멀티플레이 슈팅 게임입니다. 절차적 맵 생성과 공간 점유 판정, 라운드별 자원 갱신, 보급품 배치와 카메라 가림 처리를 담당했습니다.
 
 | 구분 | 내용 |
@@ -12,6 +9,16 @@
 | 환경 | Unreal Engine 5.5, C++ |
 | 주요 담당 | 맵 생성, 공간 검증, 자원 재배치, 보급, 카메라 가림 처리 |
 | 추가 기여 | GameMode 중심의 초기 전투 흐름 설계, 안전 영역 초기 구현 |
+
+## 플레이 영상
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=m5du1KtTWZ0">
+    <img src="https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg" alt="Shooting Star 플레이 영상">
+  </a>
+  <br>
+  <sub>Shooting Star 게임 플레이 데모</sub>
+</p>
 
 ## 핵심 구현
 
