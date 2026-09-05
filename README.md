@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=m5du1KtTWZ0">
-    <img src="https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg" alt="Shooting Star 플레이 영상">
+    <img src="https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg" alt="Shooting Star 플레이 영상" width="100%">
   </a>
   <br>
   <sub>Shooting Star 게임 플레이 데모</sub>
