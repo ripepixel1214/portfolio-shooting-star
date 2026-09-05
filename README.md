@@ -6,7 +6,7 @@
 
 [![Shooting Star 데모 영상](https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg)](https://www.youtube.com/watch?v=m5du1KtTWZ0)
 
-[YouTube에서 데모 보기](https://www.youtube.com/watch?v=m5du1KtTWZ0)
+데모 영상
 
 | 구분 | 내용 |
 | --- | --- |
@@ -24,10 +24,9 @@
 
 후보 위치 검증은 맵 생성 컴포넌트에 모으고, 장애물과 펜스, 자원 등의 생성 규칙은 유형별 Generator로 분리했습니다.
 
-- [공간 판정과 생성 규칙](Docs/SpatialGeneration.md)
 - [MapGeneratorComponent.cpp](Source/Source/ShootingStar/Private/MapGeneratorComponent.cpp)
 - [Generator 인터페이스](Source/Source/ShootingStar/Public/IObjectGenerator.h)
-- [원본 팀 PR #39: 생성 구조 분리](https://github.com/floweryclover/shooting-star/pull/39)
+- [PR: 생성 구조 분리](https://github.com/floweryclover/shooting-star/pull/39)
 
 ### 2. 라운드별 자원 재배치와 공통 공간 검증
 
@@ -36,19 +35,11 @@
 보급 이벤트도 위치 검증과 Actor 생성 흐름에 연결했습니다. 보급품 후보가 현재 안전 영역과 맵 경계를 벗어나지 않도록 검사했습니다.
 
 - [자원 생성 코드](Source/Source/ShootingStar/Private/ResourceGenerator.cpp)
-- [원본 팀 PR #158: 자원 재배치](https://github.com/floweryclover/shooting-star/pull/158)
-- [원본 팀 PR #129: 보급 이벤트](https://github.com/floweryclover/shooting-star/pull/129)
+- [PR: 자원 재배치](https://github.com/floweryclover/shooting-star/pull/158)
+- [PR: 보급 이벤트](https://github.com/floweryclover/shooting-star/pull/129)
 
 ## 추가 담당 기능
 
-플레이어와 카메라 사이의 오브젝트를 Multi Trace로 추적하고, 현재와 이전 가림 집합을 비교하여 반투명 처리와 원래 재질 복구를 연결했습니다. [원본 팀 PR #179](https://github.com/floweryclover/shooting-star/pull/179)
+플레이어와 카메라 사이의 오브젝트를 Multi Trace로 추적하고, 현재와 이전 가림 집합을 비교하여 반투명 처리와 원래 재질 복구를 연결했습니다. [PR: 카메라 가림 처리](https://github.com/floweryclover/shooting-star/pull/179)
 
-GameMode 중심 전투 흐름과 안전 영역의 초기 구조에도 기여했습니다. 이후 팀원이 수정한 통합 코드 전체를 개인 구현으로 표시하지 않고, 초기 설계와 담당 변경 범위를 구분합니다.
-
-## 코드 확인 안내
-
-이 저장소는 공간 생성 계층을 발췌한 소스 검토용 저장소입니다. 게임 에셋과 전체 모듈을 포함하지 않으므로 독립 빌드는 지원하지 않습니다. 발췌 파일은 개인 보관 저장소의 스냅샷이며, 개발 과정과 기여는 원본 팀 PR을 함께 확인할 수 있습니다.
-
-[파일별 원본 경로와 기준 커밋](Docs/SourceMap.md), [공개 범위와 권리 안내](NOTICE.md)
-
-<!-- DEMO_VIDEO: 촬영 완료 후 실제 플레이와 공간 검증 영상 삽입 -->
+GameMode 중심 전투 흐름을 설계하고, 안전 영역의 초기 구조를 구현했습니다.
