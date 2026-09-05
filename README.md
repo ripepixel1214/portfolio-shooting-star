@@ -12,6 +12,12 @@
 
 ## 플레이 영상
 
+### 전투 플레이
+
+[전투 영상 보기](Media/combat.mp4)
+
+### 전체 플레이 데모
+
 <p align="center">
   <a href="https://www.youtube.com/watch?v=m5du1KtTWZ0">
     <img src="https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg" alt="Shooting Star 플레이 영상">
@@ -44,6 +50,14 @@
 
 ## 추가 담당 기능
 
+### 카메라 가림 처리
+
 플레이어와 카메라 사이의 오브젝트를 Multi Trace로 추적하고, 현재와 이전 가림 집합을 비교하여 반투명 처리와 원래 재질 복구를 연결했습니다. [PR: 카메라 가림 처리](https://github.com/floweryclover/shooting-star/pull/179)
 
+[오브젝트 투명화 영상 보기](Media/camera-transparency.mp4)
+
+### 전투 흐름과 안전 영역
+
 GameMode 중심 전투 흐름을 설계하고, 안전 영역의 초기 구조를 구현했습니다.
+
+[자기장 영상 보기](Media/safe-zone.mp4)
