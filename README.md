@@ -6,7 +6,7 @@
 
 [![Shooting Star 데모 영상](https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg)](https://www.youtube.com/watch?v=m5du1KtTWZ0)
 
-
+## 개요
 | 구분 | 내용 |
 | --- | --- |
 | 기간 | 2025.03 ~ 2025.06 |
