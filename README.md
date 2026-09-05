@@ -6,7 +6,6 @@
 
 [![Shooting Star 데모 영상](https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg)](https://www.youtube.com/watch?v=m5du1KtTWZ0)
 
-데모 영상
 
 | 구분 | 내용 |
 | --- | --- |
