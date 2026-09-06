@@ -1,0 +1,50 @@
+{
+  "reportCreatedOn": "2026.09.06-16.08.05",
+  "succeeded": 4,
+  "succeededWithWarnings": 1,
+  "failed": 0,
+  "notRun": 0,
+  "provenance": {
+    "original_report_sha256": "f0f992fc8fba2fc28f06e3c9c8b73641db3e95ba8f4790b38de96dd4dd8979c7",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "code_manifest": "../Docs/SourceManifest.json",
+    "export": "Selected original report fields; device identifiers, hardware details and durations omitted. Stage5 execution."
+  },
+  "tests": [
+    {
+      "testDisplayName": "GeneratorAttemptLimits",
+      "fullTestPath": "ShootingStar.Regression.Generation.GeneratorAttemptLimits",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "InvalidResourceData",
+      "fullTestPath": "ShootingStar.Regression.Generation.InvalidResourceData",
+      "state": "Success",
+      "warnings": 5,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "MeshFallback",
+      "fullTestPath": "ShootingStar.Regression.Generation.MeshFallback",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "PointBoundary",
+      "fullTestPath": "ShootingStar.Regression.Generation.PointBoundary",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "SupplyMissingOwner",
+      "fullTestPath": "ShootingStar.Regression.Generation.SupplyMissingOwner",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ]
+}

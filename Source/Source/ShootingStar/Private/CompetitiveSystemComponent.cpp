@@ -163,11 +163,16 @@ void UCompetitiveSystemComponent::CheckAndTriggerSupplyDrop()
         {
             SupplyDropsTriggered[i] = true;
             
-            if (Owner)
+            UMapGeneratorComponent* GeneratorComponent = IsValid(Owner) ? Owner->GetMapGeneratorComponent() : nullptr;
+            FVector DropLocation;
+            if (IsValid(GeneratorComponent) && GeneratorComponent->TryGetSupplySpawnLocation(DropLocation))
             {
-                FVector DropLocation = Owner->GetMapGeneratorComponent()->GetSupplySpawnLocation();
                 UE_LOG(LogTemp, Log, TEXT("Supply drop triggered at %s"), *DropLocation.ToString());
                 OnSupplyDropped.Broadcast(DropLocation);
+            }
+            else
+            {
+                UE_LOG(LogTemp, Warning, TEXT("Supply drop %d skipped: no valid location or required object"), i);
             }
         }
     }

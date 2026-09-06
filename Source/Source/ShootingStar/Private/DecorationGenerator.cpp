@@ -37,6 +37,7 @@ void UDecorationGenerator::GenerateObjects()
 
     while (PlacedObjects < numDecos && SpawnAttempts < numDecos * 3)
     {
+        ++SpawnAttempts;
         FVector RandomLocation = Owner->GetRandomPosition();
         int32 RandomIndex = FMath::RandRange(0, decoMeshes.Num() - 1);
         UStaticMesh* RandomMesh = decoMeshes[RandomIndex];
@@ -59,8 +60,11 @@ void UDecorationGenerator::GenerateObjects()
             PlacedObjects++;
         }
         
-        SpawnAttempts++;
+
     }
+
+    if (PlacedObjects < numDecos)
+        UE_LOG(MapGenerator, Warning, TEXT("(Deco) Placed %d/%d generation units after %d attempts"), PlacedObjects, numDecos, SpawnAttempts);
 
     UE_LOG(MapGenerator, Log, TEXT("(Deco) Generating Decos Completed"));
 }

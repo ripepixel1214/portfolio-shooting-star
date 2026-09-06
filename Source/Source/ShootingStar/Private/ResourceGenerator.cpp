@@ -22,6 +22,12 @@ void UResourceGenerator::Initialize(UMapGeneratorComponent* InOwner)
 
 void UResourceGenerator::GenerateObjects()
 {
+    if (!IsValid(Owner))
+    {
+        UE_LOG(MapGenerator, Error, TEXT("(Resource) Owner is not valid!"));
+        return;
+    }
+
     // 기존 자원들 제거
     ClearSpawnedResources();
     
@@ -38,8 +44,11 @@ void UResourceGenerator::GenerateObjects()
 
     while (PlacedObjects < numResources && SpawnAttempts < numResources * 3)
     {
+        ++SpawnAttempts;
         FVector RandomLocation = Owner->GetRandomPosition();
         UResourceDataAsset* SelectedResource = SelectResourceDataAsset();
+        if (!IsValid(SelectedResource) || !IsValid(SelectedResource->LargeMesh))
+            continue;
         
         if (!Owner->CheckLocation(RandomLocation, SelectedResource->LargeMesh, EObjectMask::ResourceMask))
         {
@@ -54,8 +63,10 @@ void UResourceGenerator::GenerateObjects()
             Owner->SetObjectRegion(RandomLocation, SelectedResource->LargeMesh, EObjectMask::ResourceMask);
         }
 
-        SpawnAttempts++;
     }
+
+    if (PlacedObjects < numResources)
+        UE_LOG(MapGenerator, Warning, TEXT("(Resource) Placed %d/%d resources after %d attempts"), PlacedObjects, numResources, SpawnAttempts);
 
     UE_LOG(MapGenerator, Log, TEXT("(Resource) Generating Resources Completed"));
 }

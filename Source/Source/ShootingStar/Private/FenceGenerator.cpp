@@ -31,6 +31,7 @@ void UFenceGenerator::GenerateObjects()
 
 	while (PlacedObjects < numFences && SpawnAttempts < numFences * 2)
 	{
+        ++SpawnAttempts;
 		if (FMath::RandBool())
 		{
 			if (GenerateFenceAroundObstacle())
@@ -62,8 +63,11 @@ void UFenceGenerator::GenerateObjects()
 			}
 				
 		}
-		SpawnAttempts++;
+
 	}
+
+    if (PlacedObjects < numFences)
+        UE_LOG(MapGenerator, Warning, TEXT("(Fence) Placed %d/%d generation units after %d attempts"), PlacedObjects, numFences, SpawnAttempts);
 
 	UE_LOG(MapGenerator, Log, TEXT("(Fence) Generating Fences Completed"));
 }

@@ -100,11 +100,10 @@ FVector UMapGeneratorComponent::CalculateExtent(const FVector& Location, const U
     UBodySetup* BodySetup = ObjectMesh->GetBodySetup();
 
     // 실제 충돌 박스 크기 가져오기
-    const FKAggregateGeom& AggGeom = ObjectMesh->GetBodySetup()->AggGeom;
     if (BodySetup && BodySetup->AggGeom.BoxElems.Num() > 0)
     {
         // 콜리전 박스가 있는 경우
-        const FKBoxElem& BoxElem = AggGeom.BoxElems[0];
+        const FKBoxElem& BoxElem = BodySetup->AggGeom.BoxElems[0];
         Extent = FVector(BoxElem.X * 0.5f, BoxElem.Y * 0.5f, BoxElem.Z * 0.5f);
 
         UE_LOG(MapGenerator, Log, TEXT("충돌 박스 로드 성공"));
@@ -228,11 +227,15 @@ FVector UMapGeneratorComponent::GetRandomOffsetPosition(const FVector& Origin, f
 // 위치 유효성 검사 함수
 bool UMapGeneratorComponent::CheckLocation(const FVector& Location) const
 {
+    // 실수 범위와 배열 초기화 상태를 확인한 뒤 정수 좌표로 변환합니다.
+    if (!FMath::IsFinite(Location.X) || !FMath::IsFinite(Location.Y) || !FMath::IsFinite(Location.Z) ||
+        mapHalfSize <= 0 || !IsInMap(Location) ||
+        static_cast<int64>(mapCoordinate.Num()) != static_cast<int64>(mapHalfSize) * mapHalfSize * 4)
+        return false;
+
     const int32 X = FMath::RoundToInt(Location.X);
     const int32 Y = FMath::RoundToInt(Location.Y);
-
-    // 맵 범위를 벗어나는지 확인
-    if (!IsInMap(Location))
+    if (X < -mapHalfSize || X >= mapHalfSize || Y < -mapHalfSize || Y >= mapHalfSize)
         return false;
 
     // 실제 검사 수행
@@ -437,42 +440,48 @@ FVector UMapGeneratorComponent::GetRandomSpawnLocation()
 #pragma endregion
 
 #pragma region Resource Spawn
-FVector UMapGeneratorComponent::GetSupplySpawnLocation()
+bool UMapGeneratorComponent::TryGetSupplySpawnLocation(FVector& OutLocation)
 {
-    FVector DropLocation = GetRandomSupplySpawnLocation();
+    const ACompetitiveGameMode* GameMode = Cast<ACompetitiveGameMode>(GetOwner());
+    if (!IsValid(GameMode) || !IsValid(GameMode->GetSafeZone()) || !IsValid(GetSupplyMesh()))
+        return false;
 
-    while (!CheckLocation(DropLocation))
+    if (mapHalfSize <= 0 || mapCoordinate.Num() != mapHalfSize * mapHalfSize * 4)
+        return false;
+
+    const FVector Center = GameMode->GetSafeZone()->GetActorLocation();
+    const float Radius = GameMode->GetSafeZone()->GetRadius();
+    if (Center.ContainsNaN() || !FMath::IsFinite(Radius) || Radius <= 0.f)
+        return false;
+
+    constexpr int32 MaxAttempts = 32;
+    for (int32 Attempt = 0; Attempt < MaxAttempts; ++Attempt)
     {
-        DropLocation = FindNearestValidLocation(DropLocation, 1500.f, GetSupplyMesh(), EObjectMask::ResourceMask);
-        
-        if (DropLocation == FVector::ZeroVector)
-            DropLocation = GetRandomSupplySpawnLocation();
-        else
-            break;
+        const float Angle = FMath::FRandRange(0.f, 2.f * PI);
+        const float Distance = FMath::FRandRange(0.f, Radius * 0.8f);
+        const FVector Candidate(Center.X + Distance * FMath::Cos(Angle),
+                                Center.Y + Distance * FMath::Sin(Angle), 0.f);
+        const FVector Extent = CalculateExtent(Candidate, GetSupplyMesh(), EObjectMask::ResourceMask);
+        if (Extent.ContainsNaN() || Extent.X < 0.f || Extent.Y < 0.f)
+            continue;
+
+        // 점유 검사에서 경계를 잘라내기 전에 전체 범위를 검증합니다.
+        if (Candidate.X - Extent.X < -mapHalfSize || Candidate.Y - Extent.Y < -mapHalfSize ||
+            Candidate.X + Extent.X > mapHalfSize - 1 || Candidate.Y + Extent.Y > mapHalfSize - 1)
+            continue;
+
+        const double FarthestX = FMath::Abs(Candidate.X - Center.X) + Extent.X;
+        const double FarthestY = FMath::Abs(Candidate.Y - Center.Y) + Extent.Y;
+        if (FarthestX * FarthestX + FarthestY * FarthestY > static_cast<double>(Radius) * Radius)
+            continue;
+
+        if (CheckLocation(Candidate, GetSupplyMesh(), EObjectMask::ResourceMask))
+        {
+            OutLocation = Candidate;
+            return true;
+        }
     }
-
-    SetObjectAtArray(
-        FMath::FloorToInt(DropLocation.X),
-        FMath::FloorToInt(DropLocation.Y),
-        EObjectMask::ResourceMask
-    );
-
-    return DropLocation;
-}
-
-FVector UMapGeneratorComponent::GetRandomSupplySpawnLocation()
-{
-    // 맵 중앙 기준으로 현재 자기장 반경 내 랜덤 위치 선정
-    const float RandomAngle = FMath::RandRange(0.f, 360.f);
-    const float CurrentRadius = Cast<ACompetitiveGameMode>(GetOwner())->GetSafeZone()->GetRadius() * 50.f; // scale 고려하여 곱셈
-    const float RandomRadius = FMath::Min(FMath::RandRange(0.f, CurrentRadius * 0.8f), mapHalfSize);  // 자기장 80% 이내 위치에 생성
-    FVector DropLocation(
-        RandomRadius * FMath::Cos(RandomAngle),
-        RandomRadius * FMath::Sin(RandomAngle),
-        0.f
-    );
-
-    return DropLocation;
+    return false;
 }
 
 void UMapGeneratorComponent::OnTumbleWeedOverlapChangedHandler(ATumbleWeed* const TumbleWeed, const TArray<ACompetitivePlayerCharacter*>& OverlappingCharacters)

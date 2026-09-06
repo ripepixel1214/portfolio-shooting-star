@@ -347,6 +347,11 @@ void ACompetitiveGameMode::OnGameStarted()
 
 void ACompetitiveGameMode::HandleSupplyDrop(FVector Location)
 {
+	if (!IsValid(MapGeneratorComponent) || !IsValid(MapGeneratorComponent->GetSupplyMesh()) || !GetWorld())
+	{
+		UE_LOG(LogShootingStar, Warning, TEXT("Supply skipped: missing map, mesh or world"));
+		return;
+	}
 	if (!SupplyActorClass)
 	{
 		UE_LOG(LogShootingStar, Error, TEXT("SupplyActorClass is not set in GameMode"));
@@ -362,6 +367,7 @@ void ACompetitiveGameMode::HandleSupplyDrop(FVector Location)
 	{
 		SupplyActor->SetReplicates(true);
 		SupplyActors.Add(SupplyActor);
+		MapGeneratorComponent->SetObjectRegion(Location, MapGeneratorComponent->GetSupplyMesh(), EObjectMask::ResourceMask);
 		UE_LOG(LogShootingStar, Log, TEXT("Supply %d spawned at %s"), SupplyActors.Num()-1, *Location.ToString());
 	}
 	else

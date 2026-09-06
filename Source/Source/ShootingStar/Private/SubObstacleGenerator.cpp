@@ -33,6 +33,7 @@ void USubObstacleGenerator::GenerateObjects()
 
     while (PlacedObjects < numSubObstacles && SpawnAttempts < numSubObstacles * 3)
     {
+        ++SpawnAttempts;
         FVector RandomLocation = Owner->GetRandomPosition();
         int32 RandomIndex = FMath::RandRange(0, subObstacleMeshes.Num() - 1);
         UStaticMesh* RandomMesh = subObstacleMeshes[RandomIndex];
@@ -51,6 +52,9 @@ void USubObstacleGenerator::GenerateObjects()
             UE_LOG(MapGenerator, Log, TEXT("Generated SubObstacle: %s at %s"), *RandomMesh->GetName(), *RandomLocation.ToString());
         }
 
-        SpawnAttempts++;
+
     }
+
+    if (PlacedObjects < numSubObstacles)
+        UE_LOG(MapGenerator, Warning, TEXT("(SubObstacle) Placed %d/%d generation units after %d attempts"), PlacedObjects, numSubObstacles, SpawnAttempts);
 }

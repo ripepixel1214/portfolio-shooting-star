@@ -109,10 +109,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Spawn System")
 	FVector GetRandomSpawnLocation();
 
-	FVector GetSupplySpawnLocation();
+	bool TryGetSupplySpawnLocation(FVector& OutLocation);
 
 protected:
-	FVector GetRandomSupplySpawnLocation();
 
 	// Map Settings
 	UPROPERTY(EditAnywhere, Category = "Map Settings", meta = (ClampMin = "1000", ClampMax = "10000"))

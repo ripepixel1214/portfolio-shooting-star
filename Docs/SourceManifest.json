@@ -1,0 +1,376 @@
+[
+  {
+    "file": "Source/Source/ShootingStar/Private/CompetitiveGameMode.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "e02dbb4ec7a7ce0289314d2e5c99113c9267b9489af93adc0e438a1e44a54e21",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/CompetitiveGameState.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "e49ef65192c70ce9d200d646917fd99587b0b84ec5655bb8c9161806878948ee",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/CompetitivePlayerCharacter.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "4d30a1fb50dbafd1e0da6168994cf902192ba6cb570af026b1ba709d78e92ed9",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/CompetitiveSystemComponent.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "f072363453a77f1748edca3e2e6199afb74578c8439043394971eb29ef95cf08",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/DecorationGenerator.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "de292b452333cd0716c796526b8f871a977b87a9a4185af4401741fe0bb77279",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/FenceGenerator.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "232e4cd43daa0c798cec2776f9fb9c7a6d3d780360dde0174482c9da94e0fca5",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/MapGeneratorComponent.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "10e3ff500c727bc8c3b0fbd891b6b92621a6c990547fc4bfaf1af2efeb4805b2",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/MapInstancedMeshActor.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "e3f32d345267f2aef927006f5c0f156547160545841ccfb43301512326f584f0",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/MapObjectActor.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "1447e282e10b8cc52450fe77f1c66d714c606d4ed3aaee83727588233dfb65ec",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/ObstacleGenerator.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "106582a5763053921a33b966d0cf69aaaa97d7ce991959c70451b4fe0fc4bd09",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/ResourceActor.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "4d245b3d0856b69a47d9da9cf64bbd19e46a774e158d906052a1cb4f36202dec",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/ResourceDataAsset.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "b540f52ea2ad495d092c21616f96758244de85bcaf8ef30d40490d2a8d53c77f",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/ResourceGenerator.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "4ad51d5be4aed01ee9bb0020a591ef835aaa25a3dfe582eae3dceac8e1242578",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/SafeZoneActor.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "cb99691f1d6d3d842d611b4cc1106f0a952e2dddfa71a2999b79a05e6cd92ad4",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/SubObstacleGenerator.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "3cc80f6b48a5674df5436193dbad54f63c498cb108c84f9b5f54013d918f4c9f",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/SupplyActor.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "8453b7665881936f3817b8c5dd03318c007ec430749d754de250fe9faaba6928",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/SupplyIndicatorUI.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "694bac6a38896d96b58ade52f99e716e7cc302d7b7f23c4a5238d02bc7e20e20",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/TeamComponent.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "69ee2147c9adc120c1c2e4e3c3c0584a3b7fb06c04b9c2d1ad305b35486a4c34",
+    "git_authors": [],
+    "attribution_basis": "Shared supporting dependency, not claimed as personal implementation"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/Tests/GenerationRegressionTests.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "8440cd3f819d13292f2b41da9b849e1847f83375d472ffb7938e3d0b98cd637f",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship",
+    "latest_review_stage": 5
+  },
+  {
+    "file": "Source/Source/ShootingStar/Private/TumbleWeed.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "d35ebd18e1222555755fd77fe11dcf79c1e6bf3c571bf851111f67a3dbf23023",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/CompetitiveGameMode.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "6cd2173e169ae0348f428a732e69780d286fc68dd22d7bb718249cbe49e61405",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/CompetitiveGameState.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "9d502509a739f9d70df01cda4ca8475234652c96a9498d3d4e55079b7751ff9c",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/CompetitivePlayerCharacter.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "ef421f7231e1c5ee03e571565301eb201894e677911267fa8ba71be57fcdaccd",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/CompetitiveSystemComponent.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "69c001fdd84e4f7db73e955219d6b5635677b61ba15f23b72e7b1b04763ae39d",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/DecorationGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "0e18b6d27763d36e22d5c9e5087b6aa2e8864b7ea1056d2ade43b254bd0a9f16",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/FenceData.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "5964f1c4649f250ee671d4d0a779825392e32761e9067a630a6c8de2d24b9dda",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/FenceGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "e3f37a7903a6506e0350c016c31f25f64608d2c418fc97f15fc2ea5ec3a42c5c",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/IObjectGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "7d37e0bef61594c0abb742374468431c4c11f40f8f50e2b53bf5ca149f2c9362",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/MapEnum.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "28525a9ac66d83f821900644d864a40bd80902b0d539b0dd5133e169fca615b9",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/MapGeneratorComponent.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": true,
+    "sha256_lf": "09a5bdb027421082ea39b91bccb8f804a807831bf633f163b70fda80790b9028",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/MapInstancedMeshActor.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "d8ba50a66414f1ee1ae6f163fe68a6f8fe261c3f34caf17e70bdd38be3a6d031",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/MapObjectActor.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "a7a7de98cea94022220a26efb5e7b770410c623b8f2d19dd5c63af6cab0fd4d0",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/ObstacleGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "31c2bdd1654bcf1f9d6db9c1ecd0fc5b0ce3a591dcec576a96ab6d70a622295e",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/ResourceActor.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "73c687bbdab155e5bd684f737284d6b6a68a847e2af0722871f8d48ff56e9631",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/ResourceDataAsset.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "9e977fd255c8bb8c22a5ca572160a5574ff28cc0fc5238e1d5c29f993052d321",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/ResourceGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "4aeec7a76dd8714381554078dd06a71ad605a5120777aa9e9f20663ffc97f9cb",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/ResourceType.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "851d89133fd541bd8b6eda4e8e439f39299149d8bed57a61e296adcfbf4468db",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/SafeZoneActor.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "36e059fb55bdf3b415eb0825ae37e6479f8b984424a1c42ed7a6796d05d0ed77",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/SubObstacleGenerator.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "520131c28caa7169b69f02e78ebec3c95f3dbd245a8264652a9c66411c59bafd",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/SupplyActor.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "8705753f81605f81235ca428d24c1e5bc3bc4d840c80ca206568a990df99f242",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/SupplyIndicatorUI.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "4503972b0dcf14fd513999c506fbc10ddfa91ebbe5613da326612bcbd7459d81",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/TeamComponent.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "f0db83f34165e407cefe04e261425a9962ff761d26584a2aa1a854e63e90f2fa",
+    "git_authors": [],
+    "attribution_basis": "Shared supporting dependency, not claimed as personal implementation"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/TumbleWeed.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "949a28f8d8220d121308295208939eefa57fc5106ef407c00fc9e77b113151e7",
+    "git_authors": [],
+    "attribution_basis": "Team PR and confirmed contribution; import commit is not authorship"
+  },
+  {
+    "file": "Source/Source/ShootingStar/Public/WeaponData.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "0004ebe1c72291d1e3fa719399ac5048c91ce39d7761760235c4fcaf81f01baf",
+    "git_authors": [],
+    "attribution_basis": "Shared supporting dependency, not claimed as personal implementation"
+  },
+  {
+    "file": "Source/Source/ShootingStar/ShootingStar.cpp",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "45ee8713980a14e94f0c07e0356a440874c759e0ffd644413221df362214b4b5",
+    "git_authors": [],
+    "attribution_basis": "Shared supporting dependency, not claimed as personal implementation"
+  },
+  {
+    "file": "Source/Source/ShootingStar/ShootingStar.h",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "post_review_change": false,
+    "sha256_lf": "439771935c6b94dddcbaea7c0fbeea7bab02e234f82768391753cc5ae7146c3d",
+    "git_authors": [],
+    "attribution_basis": "Shared supporting dependency, not claimed as personal implementation"
+  }
+]

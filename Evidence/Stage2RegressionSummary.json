@@ -1,0 +1,36 @@
+{
+  "reportCreatedOn": "2026.09.06-13.38.18",
+  "succeeded": 2,
+  "succeededWithWarnings": 1,
+  "failed": 0,
+  "notRun": 0,
+  "provenance": {
+    "original_report_sha256": "fb65297b4c1a9aa993b8dcd1164c3cd2cb78240cf282a6c8d2eb03d2ee61fd46",
+    "source_base_commit": "851a1a5786135ebde66cf98cacb0bd46a15b98fc",
+    "code_version": "Stage2 working-tree snapshot; see Stage2SourceManifest.json",
+    "export": "Selected original report fields. Device identifiers, hardware details and durations omitted. Not a new execution."
+  },
+  "tests": [
+    {
+      "testDisplayName": "InvalidResourceData",
+      "fullTestPath": "ShootingStar.Regression.Generation.InvalidResourceData",
+      "state": "Success",
+      "warnings": 5,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "MeshFallback",
+      "fullTestPath": "ShootingStar.Regression.Generation.MeshFallback",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "testDisplayName": "SupplyMissingOwner",
+      "fullTestPath": "ShootingStar.Regression.Generation.SupplyMissingOwner",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ]
+}
