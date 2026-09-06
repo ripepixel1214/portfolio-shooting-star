@@ -20,3 +20,15 @@ Git 작성자 목록은 공동 수정 여부를 확인하는 보조 정보입니
 | [Source/ShootingStar/Public/FenceGenerator.h](../Source/Source/ShootingStar/Public/FenceGenerator.h) | `851a1a578613` | Jinwon Joung |
 | [Source/ShootingStar/Public/ResourceGenerator.h](../Source/Source/ShootingStar/Public/ResourceGenerator.h) | `851a1a578613` | Jinwon Joung |
 | [Source/ShootingStar/Public/DecorationGenerator.h](../Source/Source/ShootingStar/Public/DecorationGenerator.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/CompetitiveGameMode.cpp](../Source/Source/ShootingStar/Private/CompetitiveGameMode.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/CompetitiveGameMode.h](../Source/Source/ShootingStar/Public/CompetitiveGameMode.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/CompetitiveSystemComponent.cpp](../Source/Source/ShootingStar/Private/CompetitiveSystemComponent.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/CompetitiveSystemComponent.h](../Source/Source/ShootingStar/Public/CompetitiveSystemComponent.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/SafeZoneActor.cpp](../Source/Source/ShootingStar/Private/SafeZoneActor.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/SafeZoneActor.h](../Source/Source/ShootingStar/Public/SafeZoneActor.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/SupplyActor.cpp](../Source/Source/ShootingStar/Private/SupplyActor.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/SupplyActor.h](../Source/Source/ShootingStar/Public/SupplyActor.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/CompetitivePlayerCharacter.cpp](../Source/Source/ShootingStar/Private/CompetitivePlayerCharacter.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/CompetitivePlayerCharacter.h](../Source/Source/ShootingStar/Public/CompetitivePlayerCharacter.h) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Private/MapObjectActor.cpp](../Source/Source/ShootingStar/Private/MapObjectActor.cpp) | `851a1a578613` | Jinwon Joung |
+| [Source/ShootingStar/Public/MapObjectActor.h](../Source/Source/ShootingStar/Public/MapObjectActor.h) | `851a1a578613` | Jinwon Joung |
