@@ -2,13 +2,32 @@
 
 자원을 채굴해 무기를 제작하고 팀원과 협력해 상대 팀을 제압하는 3D 탑다운 전술 슈팅 게임입니다. 절차적으로 생성되는 전장과 좁아지는 안전 영역에서 자원 확보와 교전 시점을 판단하며 전투합니다.
 
-| 구분 | 내용 |
-| :---: | :---: |
-| 기간 | 2025.03~2025.06 |
-| 팀 | 4명 |
-| 환경 | Unreal Engine 5.5, C++ |
-| 담당 | 맵 생성, 공간 검증, 자원 재배치, 보급, 카메라 가림 처리 |
-| 추가 기여 | GameMode 초기 전투 흐름 설계, 안전 영역 판정 |
+<table align="center">
+  <tr>
+    <th>구분</th>
+    <th>내용</th>
+  </tr>
+  <tr>
+    <td>기간</td>
+    <td>2025.03~2025.06</td>
+  </tr>
+  <tr>
+    <td>팀</td>
+    <td>4명</td>
+  </tr>
+  <tr>
+    <td>환경</td>
+    <td>Unreal Engine 5.5, C++</td>
+  </tr>
+  <tr>
+    <td>담당</td>
+    <td>맵 생성, 공간 검증, 자원 재배치, 보급, 카메라 가림 처리</td>
+  </tr>
+  <tr>
+    <td>추가 기여</td>
+    <td>GameMode 초기 전투 흐름 설계, 안전 영역 판정</td>
+  </tr>
+</table>
 
 ## 주요 기여
 
@@ -19,13 +38,32 @@
 
 ## 구현 상세와 코드
 
-| 기능 | 설명 |
-| :---: | :---: |
-| [공간 검증과 맵 생성](Docs/SpatialGeneration.md) | 점유 배열, 메시 범위, 대체 위치, 유형별 생성과 자원 재배치 |
-| [경기 진행과 화면 피드백](Docs/Gameplay.md) | 보급, 안전 영역, GameMode 기여, 카메라와 피격 효과 |
-| [후속 수정과 검증](Docs/Verification.md) | 보급 탐색 종료, 재질 갱신, null 처리, 자원 반복문, 회귀 테스트 |
-| [전체 코드 목록](Docs/CodeIndex.md) | 구현과 연동에 필요한 파일 탐색 |
-| [소스 출처](Docs/SourceMap.md) | 원본 기준 커밋, 공동 코드와 후속 수정 구분 |
+<table align="center">
+  <tr>
+    <th>기능</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td><a href="Docs/SpatialGeneration.md">공간 검증과 맵 생성</a></td>
+    <td>점유 배열, 메시 범위, 대체 위치, 유형별 생성과 자원 재배치</td>
+  </tr>
+  <tr>
+    <td><a href="Docs/Gameplay.md">경기 진행과 화면 피드백</a></td>
+    <td>보급, 안전 영역, GameMode 기여, 카메라와 피격 효과</td>
+  </tr>
+  <tr>
+    <td><a href="Docs/Verification.md">후속 수정과 검증</a></td>
+    <td>보급 탐색 종료, 재질 갱신, null 처리, 자원 반복문, 회귀 테스트</td>
+  </tr>
+  <tr>
+    <td><a href="Docs/CodeIndex.md">전체 코드 목록</a></td>
+    <td>구현과 연동에 필요한 파일 탐색</td>
+  </tr>
+  <tr>
+    <td><a href="Docs/SourceMap.md">소스 출처</a></td>
+    <td>원본 기준 커밋, 공동 코드와 후속 수정 구분</td>
+  </tr>
+</table>
 
 ## 플레이 영상
 
