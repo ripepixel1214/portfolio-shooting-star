@@ -32,6 +32,6 @@ PR: [카메라 가림과 충돌 범위 #179](https://github.com/floweryclover/sh
 
 [ResourceActor.PlayHitParticle](../Source/Source/ShootingStar/Private/ResourceActor.cpp)는 자원 타입에 맞는 효과를 선택하고 기존 파티클 컴포넌트를 제거한 뒤 새 효과를 재생합니다. 자원 피격 효과와 사운드 연결에 기여했으며 자원 종류별 데이터 에셋 분리 및 현재 Actor 전체는 단독 구현으로 설명하지 않습니다.
 
-전투 레벨, BGM과 충돌 설정 작업은 코드 파일만으로 확인할 수 없습니다. Blueprint의 메시와 효과 연결, Visibility 응답 및 레벨 배치 자료가 보완 대상입니다. 에셋 원본은 이 저장소에 포함하지 않습니다.
+전투 레벨, BGM과 충돌 설정은 원본 프로젝트의 Blueprint와 레벨에 의존합니다.
 
 PR: [피격 효과와 펜스 보완 #160](https://github.com/floweryclover/shooting-star/pull/160), [충돌 설정 #184](https://github.com/floweryclover/shooting-star/pull/184), [BGM과 에셋 #187](https://github.com/floweryclover/shooting-star/pull/187)

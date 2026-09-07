@@ -19,15 +19,13 @@
 
 ## 구현 상세와 코드
 
-| 확인할 내용 | 설명 |
+| 기능 | 설명 |
 | --- | --- |
 | [공간 검증과 맵 생성](Docs/SpatialGeneration.md) | 점유 배열, 메시 범위, 대체 위치, 유형별 생성과 자원 재배치 |
 | [경기 진행과 화면 피드백](Docs/Gameplay.md) | 보급, 안전 영역, GameMode 기여, 카메라와 피격 효과 |
 | [후속 수정과 검증](Docs/Verification.md) | 보급 탐색 종료, 재질 갱신, null 처리, 자원 반복문, 회귀 테스트 |
 | [전체 코드 목록](Docs/CodeIndex.md) | 구현과 연동에 필요한 파일 탐색 |
 | [소스 출처](Docs/SourceMap.md) | 원본 기준 커밋, 공동 코드와 후속 수정 구분 |
-
-이 저장소는 소스 발췌본이며 독립 실행 프로젝트가 아닙니다. 원본 프로젝트에 적용한 후속 수정과 테스트를 포함하고, 기존 플레이 영상은 해당 수정의 실행 검증과 구분합니다.
 
 ## 플레이 영상
 
@@ -64,5 +62,3 @@ https://github.com/user-attachments/assets/37ab7ece-31b8-4225-9d73-cf62d646eea1
 https://github.com/user-attachments/assets/3362463d-bf0f-438d-aa3c-484b2fdbbe27
 
 </td><td width="15%"></td></tr></table>
-
-[공개 범위와 권리 안내](NOTICE.md)
