@@ -2,10 +2,10 @@
 
 자원을 채굴해 무기를 제작하고 팀원과 협력해 상대 팀을 제압하는 3D 탑다운 전술 슈팅 게임입니다. 절차적으로 생성되는 전장과 좁아지는 안전 영역에서 자원 확보와 교전 시점을 판단하며 전투합니다.
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
     <th>구분</th>
-    <th>내용</th>
+    <th width="100%">내용</th>
   </tr>
   <tr>
     <td>기간</td>
@@ -38,10 +38,10 @@
 
 ## 구현 상세와 코드
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
     <th>기능</th>
-    <th>설명</th>
+    <th width="100%">설명</th>
   </tr>
   <tr>
     <td><a href="Docs/SpatialGeneration.md">공간 검증과 맵 생성</a></td>
@@ -69,34 +69,34 @@
 
 ### 전체 플레이 데모
 
-<table align="center" width="100%"><tr><td width="15%"></td><td width="70%" align="center">
+<table align="center" width="100%"><tr><td width="1200" align="center">
   <a href="https://www.youtube.com/watch?v=m5du1KtTWZ0">
     <img src="https://img.youtube.com/vi/m5du1KtTWZ0/hqdefault.jpg" alt="Shooting Star 플레이 영상" width="100%">
   </a>
   <br>
   <sub>Shooting Star 게임 플레이 데모</sub>
-</td><td width="15%"></td></tr></table>
+</td></tr></table>
 
 ### 전투 플레이
 
-<table align="center" width="100%"><tr><td width="15%"></td><td width="70%" align="center">
+<table align="center" width="100%"><tr><td width="1200" align="center">
 
 https://github.com/user-attachments/assets/742f9eb4-b533-4154-b291-3433c4f77793
 
-</td><td width="15%"></td></tr></table>
+</td></tr></table>
 
 ### 카메라 가림 처리
 
-<table align="center" width="100%"><tr><td width="15%"></td><td width="70%" align="center">
+<table align="center" width="100%"><tr><td width="1200" align="center">
 
 https://github.com/user-attachments/assets/37ab7ece-31b8-4225-9d73-cf62d646eea1
 
-</td><td width="15%"></td></tr></table>
+</td></tr></table>
 
 ### 안전 영역
 
-<table align="center" width="100%"><tr><td width="15%"></td><td width="70%" align="center">
+<table align="center" width="100%"><tr><td width="1200" align="center">
 
 https://github.com/user-attachments/assets/3362463d-bf0f-438d-aa3c-484b2fdbbe27
 
-</td><td width="15%"></td></tr></table>
+</td></tr></table>
